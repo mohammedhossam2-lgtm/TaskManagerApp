@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TaskManager" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/surface</item>
+    </style>
+
+    <style name="TaskDialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="colorPrimary">@color/accent</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:windowMinWidthMajor">95%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+    </style>
+</resources>

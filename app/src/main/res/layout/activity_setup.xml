@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔗"
+            android:textSize="48sp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إعداد الاتصال بالسيرفر"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تأكد أن الموبايل والجهاز على نفس الشبكة"
+            android:textSize="13sp"
+            android:textColor="@color/muted"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عنوان IP السيرفر (NAS)"
+            android:textColor="@color/muted"
+            android:textSize="12sp"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText android:id="@+id/etServerIp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="مثال: 192.168.1.100"
+            android:textColorHint="@color/muted"
+            android:textColor="@color/text"
+            android:background="@drawable/input_bg"
+            android:padding="14dp"
+            android:inputType="text"
+            android:textDirection="ltr"
+            android:gravity="start"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رقم البورت"
+            android:textColor="@color/muted"
+            android:textSize="12sp"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText android:id="@+id/etServerPort"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="8090"
+            android:textColorHint="@color/muted"
+            android:textColor="@color/text"
+            android:background="@drawable/input_bg"
+            android:padding="14dp"
+            android:inputType="number"
+            android:textDirection="ltr"
+            android:gravity="start"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:id="@+id/tvSetupError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <ProgressBar android:id="@+id/setupProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="اتصال"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_primary_bg"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+</ScrollView>

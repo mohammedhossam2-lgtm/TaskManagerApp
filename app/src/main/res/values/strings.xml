@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نظام المهام</string>
+    <string name="channel_new_task">طلبات جديدة</string>
+    <string name="channel_new_reply">ردود جديدة</string>
+</resources>
